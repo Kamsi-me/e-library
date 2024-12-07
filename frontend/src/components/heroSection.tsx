@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function HeroSection() {
   return (
-    <div className="w-full px-4 sm:px-6 lg:px-8 pt-6">
+    <div className="w-full px-4 sm:px-6 lg:px-8 pt-6 mt-10">
       <div className="flex lg:gap-x-8 xl:gap-x-12 lg:items-center md:gap-6 lg:justify-between">
         <div className="lg:col-span-3">
           <h1 className="block text-4xl font-bold text-gray-800 sm:text-4xl md:text-5xl text-center sm:text-left">

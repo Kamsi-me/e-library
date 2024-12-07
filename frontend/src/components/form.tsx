@@ -67,7 +67,7 @@ export default function Form({ route, method }: FormProps) {
               md:py-16 md:px-6"
               >
                 <div className="relative flex items-center">
-                  <span className="absolute -translate-y-1/4 left-3">
+                  <span className="absolute left-3">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="w-6 h-6 text-gray-400"
@@ -93,7 +93,7 @@ export default function Form({ route, method }: FormProps) {
                 </div>
 
                 <div className="relative flex items-center mt-4">
-                  <span className="absolute -translate-y-1/4 left-3">
+                  <span className="absolute left-3">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="w-6 h-6 text-gray-400"
