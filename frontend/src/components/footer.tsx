@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 interface FooterProps {
   isLoggedIn: boolean;
 }
@@ -44,12 +46,12 @@ export default function Footer({ isLoggedIn }: FooterProps) {
                 key={index}
                 className="inline-block relative pe-8 last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-3 before:-translate-y-1/2 before:content-['/'] before:text-gray-300 dark:before:text-neutral-600"
               >
-                <a
-                  className="inline-flex gap-x-2 text-sm text-gray-500 hover:text-gray-800 focus:outline-none focus:text-gray-800 dark:text-neutral-500 dark:hover:text-neutral-200 dark:focus:text-neutral-200"
-                  href={link.href}
+                <Link
+                  className="inline-flex gap-x-2 text-sm text-gray-500 hover:text-gray-800 focus:outline-none focus:text-gray-800"
+                  to={link.href}
                 >
                   {link.label}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
@@ -62,12 +64,12 @@ export default function Footer({ isLoggedIn }: FooterProps) {
                 key={index}
                 className="inline-block relative pe-8 last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-3 before:-translate-y-1/2 before:content-['/'] before:text-gray-300 dark:before:text-neutral-600"
               >
-                <a
-                  className="inline-flex gap-x-2 text-sm text-gray-500 hover:text-gray-800 focus:outline-none focus:text-gray-800 dark:text-neutral-500 dark:hover:text-neutral-200 dark:focus:text-neutral-200"
-                  href={link.href}
+                <Link
+                  className="inline-flex gap-x-2 text-sm text-gray-500 hover:text-gray-800 focus:outline-none focus:text-gray-800"
+                  to={link.href}
                 >
                   {link.label}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>

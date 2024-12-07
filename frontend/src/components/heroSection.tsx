@@ -22,7 +22,7 @@ export default function HeroSection() {
                 type="text"
                 id="hero-input"
                 name="hero-input"
-                className="py-3 px-4 block w-full min-w-0 sm:min-w-80 border border-black/50 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none "
+                className="py-3 px-4 block w-full min-w-0 sm:min-w-80 border border-gray-300 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none "
                 placeholder="Enter book name"
               />
             </div>

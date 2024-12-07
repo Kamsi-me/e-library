@@ -2,12 +2,13 @@ import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Footer from "./components/footer";
 import Navbar from "./components/navbar";
-import ProtectedRoute from "./components/ProtectedRoute";
+// import ProtectedRoute from "./components/ProtectedRoute";
 import Home from "./pages/Home";
 import Index from "./pages/Index";
 import Login from "./pages/Login";
 import NotFound from "./pages/NotFound";
 import Register from "./pages/Register";
+import Library from "./pages/Library";
 
 function Logout() {
   localStorage.clear();
@@ -34,9 +35,17 @@ function App() {
         <Route
           path="/home"
           element={
-            <ProtectedRoute>
-              <Home />
-            </ProtectedRoute>
+            // <ProtectedRoute>
+            <Home />
+            // </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/library"
+          element={
+            // <ProtectedRoute>
+            <Library />
+            // </ProtectedRoute>
           }
         />
         <Route path="/login" element={<Login />} />
