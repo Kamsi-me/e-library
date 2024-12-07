@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export default function Contact() {
   return (
     <div>
-      <div className="max-w-5xl px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+      <div className="max-w-5xl py-10 sm:px-6 lg:px-8 lg:py-20 mx-auto">
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-6">
           <Link
             className="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md focus:outline-none focus:shadow-md transition"

@@ -86,7 +86,7 @@ export default function News() {
           <div className="py-3 px-4 flex items-center gap-x-2">
             <p className="text-gray-600">Want to read more?</p>
             <Link
-              to="../docs/index.html"
+              to="/register"
               className="inline-flex items-center gap-x-1.5 text-blue-600 decoration-2 hover:underline focus:outline-none focus:underline font-medium"
             >
               Go here
