@@ -3,12 +3,13 @@ import "./App.css";
 import Footer from "./components/footer";
 import Navbar from "./components/navbar";
 // import ProtectedRoute from "./components/ProtectedRoute";
+import History from "./pages/History";
 import Home from "./pages/Home";
 import Index from "./pages/Index";
+import Library from "./pages/Library";
 import Login from "./pages/Login";
 import NotFound from "./pages/NotFound";
 import Register from "./pages/Register";
-import Library from "./pages/Library";
 
 function Logout() {
   localStorage.clear();
@@ -45,6 +46,14 @@ function App() {
           element={
             // <ProtectedRoute>
             <Library />
+            // </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/history"
+          element={
+            // <ProtectedRoute>
+            <History />
             // </ProtectedRoute>
           }
         />
