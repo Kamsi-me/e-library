@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 type Post = {
   title: string;
   description: string;
@@ -78,20 +80,17 @@ export default function Articles() {
                 <p className="mt-2 text-gray-500">{post.description}</p>
                 <div className="flex items-center justify-between mt-4">
                   <div>
-                    <a
-                      href="#"
-                      className="text-lg font-medium text-gray-700 hover:underline hover:text-gray-500"
-                    >
+                    <p className="text-lg font-medium text-gray-700 hover:underline hover:text-gray-500">
                       {post.author}
-                    </a>
+                    </p>
                     <p className="text-sm text-gray-500">{post.date}</p>
                   </div>
-                  <a
-                    href="#"
+                  <Link
+                    to="/register"
                     className="inline-block text-blue-500 underline hover:text-blue-400"
                   >
                     Read more
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

@@ -100,9 +100,9 @@ export default function Library() {
   }, [books, searchTerm]);
 
   return (
-    <div className="max-w-[82rem] px-4 mx-auto">
+    <div className="max-w-[82rem] px-4 mx-auto mt-6 md:mt-10">
       <div className="flex flex-col md:flex-col items-center gap-4 md:justify-between py-5 sm:py-7 sm:pb-10">
-        <h2 className="text-2xl sm:text-4xl font-bold text-left">
+        <h2 className="text-2xl sm:text-4xl font-bold text-left text-gray-600">
           Explore Our Collection of Books
         </h2>
         <div className="relative lg:px-0 w-full md:max-w-xl">

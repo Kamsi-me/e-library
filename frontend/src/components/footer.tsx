@@ -29,7 +29,7 @@ const socialLinks = [
 
 export default function Footer({ isLoggedIn }: FooterProps) {
   return (
-    <footer className="w-full mt-auto py-4 md:py-10 px-4 sm:px-6 lg:px-8 max-w-[82rem] mx-auto">
+    <footer className="w-full py-4 md:py-10 px-4 sm:px-6 lg:px-8 mt-8 max-w-[82rem] mx-auto">
       <div className="grid grid-cols-1 md:grid-cols-3 items-center gap-5">
         <div>
           <img
