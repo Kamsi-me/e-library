@@ -1,5 +1,4 @@
 type Post = {
-  category: string;
   title: string;
   description: string;
   author: string;
@@ -9,7 +8,6 @@ type Post = {
 
 const posts: Post[] = [
   {
-    category: "Tech",
     title: "10 tips for becoming a better developer",
     description:
       "Discover essential tips to improve your programming skills and stay ahead in the tech world.",
@@ -19,7 +17,6 @@ const posts: Post[] = [
       "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
   },
   {
-    category: "Design",
     title: "Crafting user experiences that shine",
     description:
       "Learn how to create designs that captivate users and leave a lasting impression.",
@@ -29,7 +26,6 @@ const posts: Post[] = [
       "https://images.unsplash.com/photo-1668863699009-1e3b4118675d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80",
   },
   {
-    category: "Innovation",
     title: "The future of AI in everyday life",
     description:
       "Explore how artificial intelligence is transforming our world, one step at a time.",
@@ -76,7 +72,6 @@ export default function Articles() {
                 alt={post.title}
               />
               <div className="mt-8">
-                <span className="text-blue-500 uppercase">{post.category}</span>
                 <h1 className="mt-4 text-xl font-semibold text-gray-800">
                   {post.title}
                 </h1>
