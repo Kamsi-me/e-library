@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { BiBook, BiHomeAlt, BiSearchAlt } from "react-icons/bi";
+import { BiBook, BiExit, BiHomeAlt, BiSearchAlt } from "react-icons/bi";
 import { FaBookReader, FaHistory, FaSignInAlt } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
@@ -10,15 +10,16 @@ const LoggedInNavbar = () => {
     { name: "Home", link: "/home", icon: <BiHomeAlt /> },
     { name: "Library", link: "/library", icon: <FaBookReader /> },
     { name: "History", link: "/history", icon: <FaHistory /> },
+    { name: "Logout", link: "/", icon: <BiExit /> },
   ];
 
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, link: string) => {
     e.preventDefault();
-  
+
     if (link.startsWith("#")) {
       const targetId = link.replace("#", "");
       const element = document.getElementById(targetId);
-  
+
       if (element) {
         element.scrollIntoView({
           behavior: "smooth",
@@ -127,11 +128,11 @@ const GeneralNavbar = () => {
 
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, link: string) => {
     e.preventDefault();
-  
+
     if (link.startsWith("#")) {
       const targetId = link.replace("#", "");
       const element = document.getElementById(targetId);
-  
+
       if (element) {
         element.scrollIntoView({
           behavior: "smooth",
@@ -142,7 +143,7 @@ const GeneralNavbar = () => {
       window.location.href = link;
     }
   };
-  
+
   return (
     <nav className="bg-white shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
